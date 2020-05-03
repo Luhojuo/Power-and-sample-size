@@ -1,4 +1,3 @@
-##LAKANA COVID-19
 #Precision based sample size calculation using 95% CI
 
 library(Hmisc)
