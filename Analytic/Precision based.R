@@ -90,7 +90,7 @@ picData$PrecisionRange<-ifelse(Precision<1.5/100 & !is.na(Precision),"0.5-1.5%",
 pic<-ggplot(picData,aes(Prevalence,SampleSize,group=Precision))+
 geom_line(aes(color=PrecisionRange))+ theme_bw()
 
-picFixed<-pic+ scale_color_manual(values=c("red","black","green","yellow"))
+picFixed<-pic+ scale_color_manual(values=c("black","green","yellow","red"))
 
 ggplotly(picFixed)
 
