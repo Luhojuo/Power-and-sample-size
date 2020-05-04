@@ -84,7 +84,7 @@ picData<-cbind.data.frame(Precision,SampleSize,Prevalence)
 picData$PrecisionRange<-ifelse(Precision<1.5/100 & !is.na(Precision),"0.5-1.5%",
 			ifelse(Precision>=1.5/100 & Precision<2.5/100,"1.5-2.5%",
 			ifelse(Precision>=2.5/100 & Precision<3.5/100,"2.5-3.5%",
-			ifelse(Precision>=3.5/100,">3.5%","white"))))
+			ifelse(Precision>=3.5/100,"3.5%<","white"))))
 
 
 pic<-ggplot(picData,aes(Prevalence,SampleSize,group=Precision))+
