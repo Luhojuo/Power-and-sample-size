@@ -1,5 +1,6 @@
-##LAKANA COVID-19
+
 #Precision based sample size calculation using 95% CI
+#RShiny app
 
 library(Hmisc)
 library(ggplot2)
