@@ -11,7 +11,7 @@ library(markdown)
 ##Make vectors for Precision, Prevalence and Sample Size
 Precision<-sort(rep(seq(0.005,0.05,by=0.00001),20))
 Prevalence<-rep(seq(.01,.2,by=0.01),length(seq(0.005,0.05,by=0.00001)))
-color<-ifelse(prec<1.5/100 & !is.na(Precision),"black",
+color<-ifelse(Precision<1.5/100 & !is.na(Precision),"black",
 			ifelse(Precision>=1.5/100 & Precision<2.5/100,"green",
 			ifelse(Precision>=2.5/100 & Precision<3.5/100,"yellow",
 			ifelse(Precision>=3.5/100,"red","white"))))
